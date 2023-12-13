@@ -105,10 +105,9 @@ let tot = document.getElementById("progress");
 tot.innerText = counter + 1;
 let isCheck = false;
 
-let checkbox = document.getElementById("checkbox");
-checkbox.addEventListener = check();
-let control = document.getElementById("control");
-function check() {
+function check() { //questa funzione non funziona e non è assegnata a niente con nessun eventlistener
+  let checkbox = document.getElementById("checkbox");
+  let control = document.getElementById("control");
   if (checkbox.checked === true) {
     control.href = "index.html";
   } else {
@@ -116,6 +115,7 @@ function check() {
   }
 } 
 
+//stavo provando a lavorare con la seguente funzione, ma sto lavorando
 /* let checkbox = document.querySelector("input[name=checkbox]");
 let control = document.getElementById("control");
 checkbox.addEventListener ("change", () => {
